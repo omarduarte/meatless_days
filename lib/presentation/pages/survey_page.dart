@@ -47,6 +47,7 @@ class SurveyPage extends HookWidget {
                         top: MediaQuery.of(context).size.height / 3),
                     color: Colors.white,
                     // Todo: fix blinking, need to convert to stateful widget and preload
+                    // Todo: there's a grey line appearing in iOS device but not on simulator.
                     // https://stackoverflow.com/questions/51343735/flutter-image-preload
                     child: Image.asset(mountainsAssetPath)),
                 Container(

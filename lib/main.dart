@@ -65,7 +65,7 @@ class AppNavigator extends StatelessWidget {
       return Navigator(
         pages: [
           if (onboarding is AppLoading)
-            //TODO: make this prettier
+            //TODO: make this prettier, loading Icon perhaps
             MaterialPage(child: Scaffold(), key: ValueKey('LoadingPage')),
           if (onboarding is NewUser)
             MaterialPage(child: IntroPage(), key: IntroPage.pageKey),

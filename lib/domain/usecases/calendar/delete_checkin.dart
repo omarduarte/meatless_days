@@ -20,7 +20,7 @@ class DeleteCheckin implements UseCase<void, DeleteCheckinParams> {
     if (toDelete != null) {
       return await repository.delete(toDelete);
     } else {
-      throw Exception('Attempting to inexisting day');
+      throw Exception('Attempting delete to inexisting day');
     }
   }
 }
