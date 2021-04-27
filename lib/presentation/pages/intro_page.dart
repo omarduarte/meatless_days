@@ -1,10 +1,9 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meatless_days/core/theme_config.dart';
-import 'package:meatless_days/presentation/bloc/onboarding/onboarding_bloc.dart';
-import 'package:meatless_days/presentation/bloc/onboarding/onboarding_event.dart';
+import '../../core/theme_config.dart';
+import '../bloc/onboarding/onboarding_bloc.dart';
+import '../bloc/onboarding/onboarding_event.dart';
 
 class IntroPage extends StatelessWidget {
   static ValueKey pageKey = ValueKey('ExplainerPage');
