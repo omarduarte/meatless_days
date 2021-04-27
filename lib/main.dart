@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meatless_days/presentation/bloc/footprint_reduction/footprint_reduction_bloc.dart';
 import 'package:meatless_days/presentation/bloc/footprint_reduction/footprint_reduction_event.dart';
-import 'package:meatless_days/transitions.dart';
 
 import 'injector_container.dart' as di;
 import 'presentation/bloc/onboarding/onboarding_bloc.dart';
@@ -84,7 +83,7 @@ class AppNavigator extends StatelessWidget {
                     onCalendarOpen: () => _openCalendar(context)),
                 key: FootprintSavingsPage.pageKey),
         ],
-        transitionDelegate: NoAnimationTransitionDelegate(),
+        // transitionDelegate: NoAnimationTransitionDelegate(),
         onPopPage: (route, result) {
           return route.didPop(result);
         },
